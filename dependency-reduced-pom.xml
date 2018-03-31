@@ -38,7 +38,7 @@
               <transformers>
                 <transformer />
                 <transformer>
-                  <mainClass>service.HelloWorldApplication</mainClass>
+                  <mainClass>service.tech.stefanolupo.westburyclub.service.HelloWorldApplication</mainClass>
                 </transformer>
               </transformers>
             </configuration>

@@ -1,4 +1,4 @@
-package service;
+package tech.stefanolupo.westburyclub.service;
 
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
@@ -15,8 +15,6 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration> 
         String[] arr = {"Hello", "my" , "world"};
         Set<String> stringSet = Arrays.stream(arr).filter(x -> x.length() < 3).collect(Collectors.toSet());
         new HelloWorldApplication().run(args);
-        Derp derp = Derp.builder().setInt(0).build();
-        System.out.println(derp.getInt());
     }
 
     @Override

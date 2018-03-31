@@ -1,10 +1,7 @@
-package service;
+package tech.stefanolupo.westburyclub.service;
 
 import com.codahale.metrics.health.HealthCheck;
 
-/**
- * Created by stefano on 31/03/18.
- */
 public class TemplateHealthCheck extends HealthCheck {
 
     private String template;

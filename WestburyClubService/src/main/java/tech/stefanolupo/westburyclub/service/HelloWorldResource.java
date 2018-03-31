@@ -1,4 +1,4 @@
-package service;
+package tech.stefanolupo.westburyclub.service;
 
 import com.codahale.metrics.annotation.Timed;
 import com.google.common.base.Optional;

@@ -1,4 +1,4 @@
-package service;
+package tech.stefanolupo.westburyclub.service;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.dropwizard.Configuration;
