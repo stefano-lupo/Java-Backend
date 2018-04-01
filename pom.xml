@@ -28,7 +28,28 @@
         <maven.compiler.source>1.8</maven.compiler.source>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.jdbi</groupId>
+                <artifactId>jdbi3-bom</artifactId>
+                <type>pom</type>
+                <version>3.1.0</version>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
     <dependencies>
+
+
+
+
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>4.0</version>
+        </dependency>
 
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -93,7 +114,7 @@
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ServicesResourceTransformer"/>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>service.tech.stefanolupo.westburyclub.service.HelloWorldApplication</mainClass>
+                                    <mainClass>service.tech.stefanolupo.westburyclub.service.WestburyClubService</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>

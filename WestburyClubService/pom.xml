@@ -12,6 +12,18 @@
     <artifactId>WestburyClubService</artifactId>
 
     <dependencies>
+
+        <!-- Internal -->
+        <dependency>
+            <groupId>tech.stefanolupo</groupId>
+            <artifactId>WestburyClubData</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>tech.stefanolupo</groupId>
+            <artifactId>WestburyClubCore</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>io.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
