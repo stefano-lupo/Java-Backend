@@ -11,7 +11,8 @@ import tech.stefanolupo.westburyclub.data.daos.PokerDao;
 public class WestburyClubDataModule extends AbstractModule {
 
     private final static ImmutableList<Class<?>> UNBOUND_DAOS = ImmutableList.of(
-            AccountDao.class
+            AccountDao.class,
+            PokerDao.class
     );
 
     private DBI dbi;
@@ -19,6 +20,10 @@ public class WestburyClubDataModule extends AbstractModule {
     @Override
     protected void configure() {
         this.dbi = new DatabaseWrapper().getDbi();
+
+//        for (Class c : UNBOUND_DAOS) {
+//            bind(c).toInstance(this.dbi.open(c));
+//        }
     }
 
     @Provides

@@ -1,13 +1,20 @@
-package tech.stefanolupo.westburyclub.service;
+package tech.stefanolupo.westburyclub.service.healthchecks;
 
-import com.codahale.metrics.health.HealthCheck;
+import com.google.inject.Inject;
+import com.hubspot.dropwizard.guice.InjectableHealthCheck;
 
-public class TemplateHealthCheck extends HealthCheck {
+public class TemplateHealthCheck extends InjectableHealthCheck {
 
     private String template;
 
+    @Inject
     public TemplateHealthCheck(String template) {
         this.template = template;
+    }
+
+    @Override
+    public String getName() {
+        return "WestburyClubServiceHealthCheck";
     }
 
     @Override
